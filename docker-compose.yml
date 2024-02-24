@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  db:
+    image: mariadb:10.3
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: secret
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    volumes:
+      - ./php/:/var/www/html/
+    ports:
+      - "8080:80"
+    stdin_open: true
+    tty: true
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: secret
+      PMA_ARBITRARY: 1
+    ports:
+      - "8081:80"
