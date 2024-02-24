@@ -1,0 +1,78 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #F9F9F9;
+}
+.form-signin {
+    max-width: 600px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #96c0b9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #141414;
+}
+.form-signin-heading {
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #141414;
+}
+.input-group-addon {
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+    background-color: #eee;
+    color: #141414;
+    font-size: 16px;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.form-control {
+    border-radius: 0 4px 4px 0;
+    height: 40px;
+    font-size: 16px;
+    padding: 9px 12px;
+}
+.input-group .form-control:focus {
+    z-index: 2;
+}
+.bi {
+    font-size: 1.5rem;
+}
+.bi-person-circle {
+    color: #293241;
+    font-size: 3rem;
+}
+.flex-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.col-md-4 {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.logout-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+.logout-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.logout-link:hover {
+    color: #0496a6;
+    opacity: 1;
+}
+.bi-box-arrow-right {
+    margin-right: 5px;
+}
